@@ -30,7 +30,7 @@ for (let i = 0; i < input.length; i++) {
             }
         }
         if (cmd === 'ls') {
-            // function to find key and add shit
+            // function to find key and new directories or files
             while (input[i+1] && input[i+1][0] !== '$') {
                 i++;
                 // console.log('looping on', input[i])
@@ -61,7 +61,6 @@ function deepLook (obj) {
     return sum;
 }
 
-//lol run it
 deepLook(files);
 // last part find the sum of all directories with sum < 100k
 let result = 0;
